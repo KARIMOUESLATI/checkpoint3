@@ -1,0 +1,23 @@
+ALGORITHM first_algo
+VAR
+word : CHAR;
+    i,count_v,count_w,count_r,l:INTEGER :=0;
+
+BEGIN
+Tolowercase word 
+WHILE (word<>".") DO
+read(word)
+i=i+1
+IF (word=" ") THEN
+    count_w=count_w+1
+END_IF
+IF (word="a" OR "e" OR "i" OR "o" OR "u" OR "y") THEN
+    count_v=count_v+1
+   
+END_IF
+END_WHILE
+    Write('le number de caractere est', i)
+    Write('le number de word est', count_w)
+    Write('le number de voyelle est',count_v )
+
+END
